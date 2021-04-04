@@ -23,7 +23,7 @@ class StudentsList(Resource):
         parser.add_argument("age")
         parser.add_argument("spec")
         args = parser.parse_args()
-        student_id = int(max(STUDENTS.key()))
+        student_id = int(max(STUDENTS.keys())) + 1
         student_id = "%i" % student_id
         STUDENTS[student_id]= {
             "name": args["name"],
