@@ -32,6 +32,11 @@ class StudentsList(Resource):
         }
         return STUDENTS[student_id], 201
 
+class Student(Resource):
+  def get(self, student_id):
+  def put(self, student_id):
+  def delete(self, student_id):
+
 
 api.add_resource(StudentsList, '/students/')
 
