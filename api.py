@@ -31,7 +31,7 @@ class StudentsList(Resource):
             "spec": args["spec"],
         }
         return STUDENTS[student_id], 201
-
+# consider how you would make data type validation, ex. how can we ensure that age is an Integer
 
 api.add_resource(StudentsList, '/students/')
 
