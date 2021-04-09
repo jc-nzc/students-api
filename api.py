@@ -32,7 +32,8 @@ class StudentsList(Resource):
         }
         return STUDENTS[student_id], 201
 # consider how you would make data type validation, ex. how can we ensure that age is an Integer
-# print(txt.format(price, itemno, count))
+# https://stackoverflow.com/questions/12551526/cast-flask-form-value-to-int
+# personId = int(request.form['personId'])
 
 api.add_resource(StudentsList, '/students/')
 
